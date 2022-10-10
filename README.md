@@ -1,1 +1,1 @@
-Grinding Leetcode until I reach ontogolical transcendence
+Grinding Leetcode until I reach ontological transcendence
