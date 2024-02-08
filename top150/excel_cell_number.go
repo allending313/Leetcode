@@ -1,19 +1,8 @@
-func convertToTitle(columnNumber int) string {
-    var result string
-    for columnNumber > 0 {
-        columnNumber--
-        result = string('A' + columnNumber % 26) + result
-        columnNumber /= 26
+func titleToNumber(s string) int {
+    res := 0
+    for _, c := range s {
+        res *= 26
+        res += int(c - 'A') + 1
     }
-    return result
+    return res
 }
-
-/* Recursive
-func convertToTitle(columnNumber int) string {
-    if columnNumber == 0 {
-        return ""
-    }
-    columnNumber--
-    return convertToTitle(columnNumber/26) + string('A' + columnNumber % 26)
-}
-*/
