@@ -1,0 +1,13 @@
+class Solution:
+    def __init__(self):
+        pass
+
+    def t(self, n):
+        if n < 10:
+            print("ok")
+            self.t(n + 1)
+
+
+if __name__ == "__main__":
+    s = Solution()
+    s.t(0)
